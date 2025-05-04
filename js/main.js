@@ -64,15 +64,15 @@ class CoachingTreeVisualization {
      */
     setupPortfolioLinks() {
         const portfolioLink = document.getElementById('portfolio-link');
-        const githubLink = document.getElementById('github-link');
+        const githubLink = document.getElementById('https://github.com/Yush10');
         
         if (portfolioLink) {
             portfolioLink.href = "https://your-portfolio-url.com";
-            portfolioLink.textContent = "Your Name";
+            portfolioLink.textContent = "Aayush Munshi";
         }
         
         if (githubLink) {
-            githubLink.href = "https://github.com/yourusername/nfl-coaching-tree";
+            githubLink.href = "https://github.com/Yush10/NFL_Coaching_Tree";
         }
     }
     

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Coaching Tree Visualization</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NFL Coaching Tree Visualization</h1>
+            <div class="instructions">
+                <p><strong>Instructions:</strong> Upload your NFL coaching data in CSV format or paste it into the text area below. 
+                The data should include columns for Season, head_coach, coordinator, role, team, wins, losses, and ties.</p>
+                <p>Click on a coach's circle to view their career details. Click on a specific team/year to highlight related coaches.</p>
+            </div>
+        </header>
+        
+        <div class="controls">
+            <textarea id="data-input" placeholder="Paste your CSV data here, including headers (Season,head_coach,coordinator,role,team,wins,losses,ties)"></textarea>
+            <div class="buttons">
+                <button id="load-data">Load Data</button>
+                <button id="reset-view">Reset View</button>
+                <button id="load-sample">Load Sample Data</button>
+            </div>
+        </div>
+        
+        <div class="coaching-tree" id="coaching-tree"></div>
+        
+        <footer>
+            <p>Created by <a href="#" id="portfolio-link">Aayush Munshi</a> | <a href="#" id="https://github.com/Yush10">GitHub Repo</a></p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
